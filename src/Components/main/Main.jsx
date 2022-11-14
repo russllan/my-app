@@ -1,5 +1,20 @@
+import { useSelector } from 'react-redux';
 import './Main.css';
+
+
 const Main = () => {
+    
+    // async function dateBase(){
+    //     let response = await fetch('https://632ee37cb56bd6ac45a69446.mockapi.io/db/marks')
+    //     let data = await response.json();
+    //     console.log(data);
+    // }
+    // dateBase();
+
+    const { data } = useSelector((state) => state.cars)
+    const renderCarts = (d) => {
+        
+    }
     return(
         <div className="wrapper">
             <h1>ПРОКАТ АВТОМОБИЛЕЙ В БИШКЕКЕ</h1>
@@ -27,7 +42,7 @@ const Main = () => {
                     <option value="priceBig">Цены по возрастанию</option>
                     <option value="priceSmall">Цены по убыванию</option>
                 </select>
-                <button className='btn'>
+                <button className='btn' onClick>
                     Поиск
                 </button>
             </div>
