@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
+import LoginPage from '../../pages/login/LoginPage';
 import './Header.css';
-
-
 
 const Header = () => {
     return(
@@ -9,7 +9,7 @@ const Header = () => {
             <a href="">Наш автопарк</a>
             <a href="">Услоивя аренды</a>
             <a href="">О компании</a>
-            <a href="">Контакты</a>
+            <Link to="/LoginPage" element={<LoginPage/>}>Войти</Link>
         </header>
     )
 }

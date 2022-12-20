@@ -1,7 +1,7 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
 import Api from '../api/Api'
 
-const fetchCars = createAsyncThunk('cars/setCars', async () => {
+export const fetchCars = createAsyncThunk('cars/setCars', async () => {
     const response = await Api.getCars();
     return response.data
 })

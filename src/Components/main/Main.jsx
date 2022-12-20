@@ -1,53 +1,70 @@
-import { useSelector } from 'react-redux';
-import './Main.css';
-
+import { useState } from "react";
+import { data } from "../../constants/productPage/data";
+import HomePage from "../../pages/home/HomePage";
+import "./Main.css";
 
 const Main = () => {
-    
-    // async function dateBase(){
-    //     let response = await fetch('https://632ee37cb56bd6ac45a69446.mockapi.io/db/marks')
-    //     let data = await response.json();
-    //     console.log(data);
-    // }
-    // dateBase();
-
-    const { data } = useSelector((state) => state.cars)
-    const renderCarts = (d) => {
-        
+  // async function dateBase(){
+  //     let response = await fetch('https://632ee37cb56bd6ac45a69446.mockapi.io/db/marks')
+  //     let data = await response.json();
+  //     console.log(data);
+  // }
+  // dateBase();
+  const [mark, setMark] = useState("allMark");
+  const [price, setPrice] = useState("priceBig");
+  const [res, setRes] = useState([]);
+  const selectChange = (event) => {
+    setMark(event.target.value);
+    setPrice(event.target.value);
+    console.log(event.target.value);
+  };
+  const search = () => {
+    if(mark === 'allMark'){
+       setRes(data)
+    }else {
+        let res = data.filter((name) => {
+         return name.name.toLowerCase().includes(mark.toLowerCase());
+    });
+    setRes(res);
+    console.log(res);
     }
-    return(
-        <div className="wrapper">
-            <h1>ПРОКАТ АВТОМОБИЛЕЙ В БИШКЕКЕ</h1>
-            <p>Выберите подходящий Вам вариант</p>
-            <div>
-                <select name="" id="mark">
-                    <option value="allMark">Все Марки</option>
-                    <option value="huyndaiMark">Аренда Hyundai</option>
-                    <option value="huyndaiMark">Аренда Lexus</option>
-                    <option value="huyndaiMark">Аренда Mercedec</option>
-                    <option value="huyndaiMark">Аренда Nissan</option>
-                    <option value="huyndaiMark">Аренда Moto</option>
-                </select>
-                <select name="" id="class">
-                    <option value="allClass">Все классы</option>
-                    <option value="vipClass">Вип Авто</option>
-                    <option value="vneClass">Внедорожник</option>
-                    <option value="crosClass">Кроссовер</option>
-                    <option value="minClass">Минивэн</option>
-                    <option value="motoClass">Мотоцикл</option>
-                    <option value="retroClass">Ретро</option>
-                    <option value="dopClass">Доп. оборудование</option>
-                </select>
-                <select name="" id="price">
-                    <option value="priceBig">Цены по возрастанию</option>
-                    <option value="priceSmall">Цены по убыванию</option>
-                </select>
-                <button className='btn' onClick>
-                    Поиск
-                </button>
-            </div>
+  };
+
+  return (
+    <div className="wrapper">
+      <div className="wrSelect">
+        <h1>ПРОКАТ АВТОМОБИЛЕЙ В БИШКЕКЕ</h1>
+        <p>Выберите подходящий Вам вариант</p>
+        <div>
+          <select
+            name="selectMark"
+            id="mark"
+            value={mark}
+            onChange={selectChange}
+          >
+            <option value="allMark">Все Марки</option>
+            <option value="Hyundai">Аренда Hyundai</option>
+            <option value="Lexus">Аренда Lexus</option>
+            <option value="Mercedes">Аренда Mercedes</option>
+            <option value="Nissan">Аренда Nissan</option>
+          </select>
+          <select
+            name="selectPrice"
+            id="price"
+            value={price}
+            onChange={selectChange}
+          >
+            <option value="priceBig">Цены по возрастанию</option>
+            <option value="priceSmall">Цены по убыванию</option>
+          </select>
+          <button className="btn" onClick={search}>
+            Поиск
+          </button>
         </div>
-    )
-}
+      </div>
+      <HomePage res={res} />
+    </div>
+  );
+};
 
 export default Main;

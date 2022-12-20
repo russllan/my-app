@@ -1,0 +1,15 @@
+.cardsWrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 30px;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.HomePage{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
