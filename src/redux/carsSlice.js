@@ -1,22 +1,15 @@
-import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
-import Api from '../api/Api'
-
-export const fetchCars = createAsyncThunk('cars/setCars', async () => {
-    const response = await Api.getCars();
-    return response.data
-})
+import {createSlice} from '@reduxjs/toolkit';
+import { data } from '../constants/productPage/data';
 
 const carsSlice = createSlice({
     name: 'cars',
-    initialState: { data: [] },
-    reducers: {},
-    extraReducers: (builder) => {
-        builder.addCase(fetchCars.fulfilled, (state, action) => {
-            state.data = action.payload
-        })
+    initialState: { data: data },
+    reducers: {
+        setCars: (state,actions) => {
+            state.data = actions.payload
+        }
     }
 })
 
 export const carsSliceAction = carsSlice.actions;
 export const carsSliceReducer = carsSlice.reducer;
-

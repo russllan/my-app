@@ -1,10 +1,8 @@
 import React from 'react'
 import css from './HomePage.module.css';
 import Carts from '../../Components/carts/Carts';
-// import { useSelector } from 'react-redux';
 
 function HomePage(props) {
-    // const { data } = useSelector((state) => state.cars)
 
     const renderCarts = (d) => {
         return d.length ? (

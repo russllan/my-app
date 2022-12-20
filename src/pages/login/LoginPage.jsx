@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import Dashboard from '../dashboard/Dashboard';
+import { useNavigate } from 'react-router-dom'
 import css from './LoginPage.module.css'
 
 function LoginPage() {

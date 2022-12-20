@@ -4,3 +4,14 @@
     flex-wrap: wrap;
     grid-gap: 30px;
 }
+.admin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.admin > button{
+    padding: 10px 60px;
+    background: rgb(87, 87, 248);
+    border-radius: 20px;
+    color: #fff;
+}
