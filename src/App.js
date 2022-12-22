@@ -6,6 +6,7 @@ import ProductPage from './pages/more/ProductPage';
 import LoginPage from './pages/login/LoginPage';
 import Dashboard from './pages/dashboard/Dashboard';
 import CreateCars from './pages/createCars/CreateCars';
+import RequestPage from './pages/request/RequestPage';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/LoginPage' element={<LoginPage/>}/>
         <Route path='/Dashboard' element={<Dashboard/>}/>
         <Route path='/createCars' element={<CreateCars/>}/>
+        <Route path='/request' element={<RequestPage/>} />
       </Routes>
     </div>
   );

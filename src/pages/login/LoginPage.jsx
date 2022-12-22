@@ -8,14 +8,29 @@ function LoginPage() {
     const [login, setLogin] = useState("")
     const [pass, setPass] = useState("")
     const [error, setError] = useState("")
-    const handleLogin = e => setLogin(e.target.value);
+    const handleLogin = (e) => {setLogin(e.target.value); console.log(login);};
     const handlePass = e => setPass(e.target.value);
     const clickSignIn = () => {
-        if(login && pass === 'admin'){
+        const user = localStorage.getItem('test');
+        const userRes = JSON.parse(user);
+        console.log(userRes);
+        if(login == userRes.login && pass == userRes.password){
+            navigate('/')
+        }
+        else if(login && pass === 'admin'){
             navigate('/Dashboard')
         }else{
             setError("Неправильно введены данные")
-        }        
+        }
+    }
+    const clickSignUp = () => {
+        const register = {
+            login: login,
+            password: pass
+        }
+        let reg = JSON.stringify(register)
+        localStorage.setItem('test', reg)
+        console.log(reg);
     }
 
   return (
@@ -26,7 +41,7 @@ function LoginPage() {
             <input type="password" placeholder='Password' value={pass} onChange={handlePass} required/>
             <div><input type="checkbox"/> Save data?</div>
             <button className={css.signIn} onClick={clickSignIn}>Войти</button>
-            <button className={css.signUp}>Зарегистрироваться</button>
+            <button className={css.signUp} onClick={clickSignUp}>Зарегистрироваться</button>
         </div>
         <div className={css.errorBlock}>{error}</div>
     </div>

@@ -83,3 +83,6 @@
   background: rgb(199,199,199);
   color: rgb(114,114,114);
 }
+button{
+  cursor: pointer;
+}

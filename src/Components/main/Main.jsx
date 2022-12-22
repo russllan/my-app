@@ -33,7 +33,7 @@ const Main = () => {
   return (
     <div className="wrapper">
       <div className="wrSelect">
-        <h1>ПРОКАТ АВТОМОБИЛЕЙ В БИШКЕКЕ</h1>
+        <h1>ПРОКАТ АВТОМОБИЛЕЙ в БИШКЕКЕ</h1>
         <p>Выберите подходящий Вам вариант</p>
         <div>
           <select
@@ -42,7 +42,7 @@ const Main = () => {
             value={mark}
             onChange={selectChange}
           >
-            <option value="allMark">Все Марки</option>
+            <option value="allMark">Всё Марки</option>
             <option value="Hyundai">Аренда Hyundai</option>
             <option value="Lexus">Аренда Lexus</option>
             <option value="Mercedes">Аренда Mercedes</option>
