@@ -18,19 +18,19 @@ function CreateCars() {
     const [transmission,setTran] = useState("")
     const [door,setDoor] = useState("")
     const [img,setImg] = useState("")
-    const [id,setId] = useState("")
+    const [id, setId] = useState("")
 
-    const handleName = (e) => setName(e.target.value);
-    const handleYear = (e) => setYear(e.target.value);
-    const handlePrice = (e) => setPrice(e.target.value);
-    const handleSeats = (e) => setSeats(e.target.value);
-    const handleBaggage = (e) => setBaggage(e.target.value);
-    const handleTran = (e) => setTran(e.target.value);
-    const handleDoor = (e) => setDoor(e.target.value);
-    const handleImg = (e) => setImg(e.target.value);
-    const handleId = (e) => setId(e.target.value);
+    const handleName = e => setName(e.target.value);
+    const handleYear = e => setYear(e.target.value);
+    const handlePrice = e => setPrice(e.target.value);
+    const handleSeats = e => setSeats(e.target.value);
+    const handleBaggage = e => setBaggage(e.target.value);
+    const handleTran = e => setTran(e.target.value);
+    const handleDoor = e => setDoor(e.target.value);
+    const handleImg = e => setImg(e.target.value);
+    const handleId = e => setId(e.target.value);
 
-    const newData = [{
+    const newData = {
         id: id,
         name: name,
         year: year,
@@ -40,11 +40,11 @@ function CreateCars() {
         transmission: transmission,
         door: door,
         imgUrl: img
-    }]
+    }
     console.log(newData);
 
     const create = () => {
-        Array.prototype.push.apply(newData, data)
+        console.log(Array.prototype.push.apply(newData, data));
         dispatch(carsSliceAction.setCars(newData));
         console.log(data);
         navigate('/Dashboard');
@@ -68,4 +68,4 @@ function CreateCars() {
   )
 }
 
-export default CreateCars
+export default CreateCars;

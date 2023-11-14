@@ -3,7 +3,16 @@ import css from "./Carts.module.css";
 import { Link } from "react-router-dom";
 import { HiUsers } from "react-icons/hi2";
 import { TfiBriefcase, TfiPanel } from "react-icons/tfi";
+import { useDispatch } from "react-redux";
+import { carsSliceAction } from "../../redux/carsSlice";
 function Carts(props) {
+
+  const dispatch = useDispatch();
+
+  const handleDelete = () => {
+    dispatch(carsSliceAction.deleteCars(props.id));
+  };
+
   return (
     <div className={css.carts}>
       <div className={css.imgWrapper}>
@@ -34,6 +43,7 @@ function Carts(props) {
         <Link to={"/ProductPage/" + props.id}>
           <button className={`btn-primary ${css.btn}`}>Подробнее</button>
         </Link>
+        {props.isAdmin ? (<button onClick={handleDelete}>Удалить</button>) : null}
       </div>
     </div>
   );

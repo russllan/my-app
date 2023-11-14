@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { data } from "../../constants/productPage/data";
 import HomePage from "../../pages/home/HomePage";
 import "./Main.css";
+import { useSelector } from "react-redux";
 
 const Main = () => {
   // async function dateBase(){
@@ -10,14 +10,19 @@ const Main = () => {
   //     console.log(data);
   // }
   // dateBase();
+
+  const data = useSelector((state) => state.cars.data)
+
   const [mark, setMark] = useState("allMark");
   const [price, setPrice] = useState("priceBig");
   const [res, setRes] = useState([]);
   const selectChange = (event) => {
+
     setMark(event.target.value);
     setPrice(event.target.value);
     console.log(event.target.value);
   };
+
   const search = () => {
     if(mark === 'allMark'){
        setRes(data)

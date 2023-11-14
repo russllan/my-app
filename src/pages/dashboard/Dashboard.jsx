@@ -3,10 +3,10 @@ import css from "./Dashboard.module.css";
 import Carts from "../../Components/carts/Carts";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Dashboard() {
-  const { data } = useSelector((state) => state.cars)
+  const data = useSelector((state) => state.cars.data)
   const { id } = useSelector((state) => state.cars)
   const { fio } = useSelector((state) => state.cars)
   const { paw } = useSelector((state) => state.cars)
@@ -29,11 +29,11 @@ function Dashboard() {
   console.log(past2 + 'past2');
   console.log(now2+ 'now2');
   const navigate = useNavigate()
-  const [isRequest, setRequest] = useState(false)
+  const [isRequest, setRequest] = useState(false);
 
   const renderCards = (e) => {
     return e.length ? (
-      e.map((item) => (
+      e?.map((item) => (
         <Carts
           key={item.id}
           text={item.name}
@@ -45,12 +45,14 @@ function Dashboard() {
           door={item.door}
           img={item.imgUrl}
           id={item.id}
+          isAdmin={true}
         />
       ))
     ) : (
       <h2 className="waterMark">К сожалению сейчас нет объявлений</h2>
     );
   };
+
   const createCard = () => {
     navigate('/createCars')
   }
@@ -58,7 +60,7 @@ function Dashboard() {
     setRequest(true)
   }
 
-  const res = data.filter(item => item.id==id);
+  const res = data.filter(item => item.id == id);
   console.log(res);
   const newRes = data.find(item=>item.id == id);
   console.log(newRes);

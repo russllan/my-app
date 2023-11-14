@@ -8,7 +8,7 @@ export const data = [
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-25-scaled.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-25-scaled-2-400x314.webp'
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ export const data = [
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-26-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/IMG_7043-2-scaled-2-400x314.webp'
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export const data = [
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2022/10/whatsapp-image-2022-10-03-at-14.23.55-700x466.jpeg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/whatsapp-image-2022-10-03-at-14.23.56-1-400x314.webp'
     },
     { // Biznes
         id: 4,
@@ -41,7 +41,7 @@ export const data = [
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-1-10-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-1-10-400x314.webp'
     },
     {
         id: 5,
@@ -52,7 +52,7 @@ export const data = [
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-1-9-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-1-9-400x314.webp'
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ export const data = [
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-1-8-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-1-8-400x314.webp'
     },
     {
         id: 7,
@@ -74,7 +74,7 @@ export const data = [
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-2-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-3-400x314.webp'
     },
     {
         id: 8,
@@ -85,7 +85,7 @@ export const data = [
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-22-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-22-400x314.webp'
     },
     {
         id: 9,
@@ -96,7 +96,7 @@ export const data = [
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-21-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-21-400x314.webp'
     },
     {
         id: 10,
@@ -118,7 +118,7 @@ export const data = [
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/03/1-1-1-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-1-1-scaled-1-400x314.webp'
     },
     {
         id: 12,
@@ -129,7 +129,7 @@ export const data = [
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/12/photo-2021-10-26-09-14-00-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/photo-2021-10-26-09-14-00-1-400x314.webp'
     },
     { //// crossovers
         id: 13,
@@ -140,7 +140,7 @@ export const data = [
         baggage: 4,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-29-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-30-400x314.webp'
     },
     {
         id: 14,
@@ -151,7 +151,7 @@ export const data = [
         baggage: 4,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-1-12-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-1-12-400x314.webp'
     },
     {
         id: 15,
@@ -162,7 +162,7 @@ export const data = [
         baggage: 4,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-32-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-31-1-400x314.webp'
     },
     {
         id: 16,
@@ -173,7 +173,7 @@ export const data = [
         baggage: 4,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-30-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-29-1-400x314.webp'
     },
     {
         id: 17,
@@ -184,18 +184,18 @@ export const data = [
         baggage: 4,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-31-700x466.jpg' 
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-32-400x314.webp' 
     },
     {
         id: 18,
         name:"Toyota RAV4 2.5L",
-        year: 2010,
+        year: 2017,
         price: 50,
         numberOfSeats: 5,
         baggage: 4,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-28-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/08/photo_7_2023-08-29_19-45-46-400x314.webp'
     },
     { /// vnedorogniki
         id: 19,
@@ -206,7 +206,7 @@ export const data = [
         baggage: 5,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/2-23-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-400x314.webp'
     },
     {
         id: 20,
@@ -217,7 +217,7 @@ export const data = [
         baggage: 5,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2022/10/photo-2022-10-20-11-25-52-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/photo-2022-10-20-11-25-52-400x314.webp'
     },
     {
         id: 21,
@@ -228,18 +228,18 @@ export const data = [
         baggage: 4,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-19-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-19-400x314.webp'
     },
     {
         id: 22,
         name:"Ford Expedition",
-        year: 2007,
+        year: 2008,
         price: 60,
         numberOfSeats: 7,
         baggage: 5,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-23-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-23-400x314.webp'
     },
     {
         id: 23,
@@ -250,7 +250,7 @@ export const data = [
         baggage: 5,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2022/06/photo-2022-06-30-17-58-14-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/photo-2022-06-30-17-58-14-400x314.webp'
     },
     {
         id: 24,
@@ -261,7 +261,7 @@ export const data = [
         baggage: 5,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2022/07/photo-2022-10-14-15-13-59-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/photo-2022-10-14-15-13-59-400x314.webp'
     },
     {
         id: 25,
@@ -272,7 +272,7 @@ export const data = [
         baggage: 5,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-24-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-24-scaled-1-400x314.webp'
     },
     {
         id: 26,
@@ -283,7 +283,7 @@ export const data = [
         baggage: 5,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-18-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-18-scaled-1-400x314.webp'
     },
     {
         id: 27,
@@ -305,7 +305,7 @@ export const data = [
         baggage: 5,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2022/08/whatsapp-image-2022-09-16-at-19.31.07-3-700x466.jpeg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/whatsapp-image-2022-09-16-at-19.31.07-400x314.webp'
     },
     {
         id: 29,
@@ -316,7 +316,7 @@ export const data = [
         baggage: 5,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2022/10/whatsapp-image-2022-10-01-at-15.59.108-700x466.jpeg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/whatsapp-image-2022-10-01-at-15.59.108-400x314.webp'
     },
     {
         id: 30,
@@ -327,18 +327,18 @@ export const data = [
         baggage: 5,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/05/image-2-1-3-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/photo-2022-10-14-15-13-59-400x314.webp'
     },
     { /// premium
         id: 31,
-        name:"Mercedes Benz",
-        year: 2009,
+        name:"MerToyota Sienna 3.5L",
+        year: 2011,
         price: 60,
-        numberOfSeats: 5,
+        numberOfSeats: 7,
         baggage: 3,
         transmission: "Auto",
         door: 4,
-        imgUrl: 'https://autopark.kg/wp-content/uploads/2021/02/1-27-700x466.jpg'
+        imgUrl: 'https://autopark.kg/wp-content/uploads/2023/04/1-1-13-400x314.webp'
     },
     {
         id: 32,

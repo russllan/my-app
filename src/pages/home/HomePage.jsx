@@ -2,7 +2,7 @@ import React from 'react'
 import css from './HomePage.module.css';
 import Carts from '../../Components/carts/Carts';
 
-function HomePage(props) {
+function HomePage({ res }) {
 
     const renderCarts = (d) => {
         return d.length ? (
@@ -18,6 +18,7 @@ function HomePage(props) {
                 door = {item.door}
                 img = {item.imgUrl}
                 id = {item.id}
+                isAdmin = {false}
                 />
             ))
         ) : (
@@ -30,7 +31,7 @@ function HomePage(props) {
         <h2>Последние объявления</h2>
         <div className={css.cardsWrapper}>
           {
-            renderCarts(props.res)
+            renderCarts(res)
           }
         </div>
         <br />
