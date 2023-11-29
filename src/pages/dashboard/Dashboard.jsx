@@ -6,29 +6,31 @@ import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 
 function Dashboard() {
-  const data = useSelector((state) => state.cars.data)
-  const { id } = useSelector((state) => state.cars)
-  const { fio } = useSelector((state) => state.cars)
-  const { paw } = useSelector((state) => state.cars)
-  const { date } = useSelector((state) => state.cars)
-  const [commission, setCommission ] = useState()
-  const [sum,setSum] = useState()
-  const newDate = Date.parse(date)
-  const past = new Date(newDate)
-  const now = new Date()
-  const past2 = past.getDate()
-  const now2 = now.getDate()
+  const data = useSelector((state) => state.cars.data);
+  const { id } = useSelector((state) => state.cars);
+  const { fio } = useSelector((state) => state.cars);
+  const { paw } = useSelector((state) => state.cars);
+  const date = useSelector((state) => state.cars.date);
+  const [commission, setCommission] = useState();
+  const [sum, setSum] = useState();
+  console.log(date);
+  const newDate = Date.parse(date);
+  const past = new Date(newDate);
+  console.log(past);
+  const now = new Date();
+  const past2 = past.getDate();
+  const now2 = now.getDate();
 
   console.log(id);
   console.log(fio);
   console.log(paw);
   console.log(date);
   console.log(newDate);
-  console.log(past + 'past');
-  console.log(now+ 'now');
-  console.log(past2 + 'past2');
-  console.log(now2+ 'now2');
-  const navigate = useNavigate()
+  console.log(past + "past");
+  console.log(now + "now");
+  console.log(past2 + "past2");
+  console.log(now2 + "now2");
+  const navigate = useNavigate();
   const [isRequest, setRequest] = useState(false);
 
   const renderCards = (e) => {
@@ -54,15 +56,15 @@ function Dashboard() {
   };
 
   const createCard = () => {
-    navigate('/createCars')
-  }
+    navigate("/createCars");
+  };
   const requestClick = () => {
-    setRequest(true)
-  }
+    setRequest(true);
+  };
 
-  const res = data.filter(item => item.id == id);
+  const res = data.filter((item) => item.id == id);
   console.log(res);
-  const newRes = data.find(item=>item.id == id);
+  const newRes = data.find((item) => item.id == id);
   console.log(newRes);
 
   // console.log(res[0].price);
@@ -90,25 +92,29 @@ function Dashboard() {
       setSum(resl)
       console.log(resl);
     }
-  }
+  };
 
-  if(isRequest){
+  if (isRequest) {
     return (
       <div className={css.requsetWrap}>
         <div className={css.reqLeft}>
           {renderCards(res)}
-          <h2 className={css.h20}>Название машины: {newRes.name} {newRes.year}</h2>
+          <h2 className={css.h20}>
+            Название машины: {newRes.name} {newRes.year}
+          </h2>
           <h3>Цена: ${newRes.price}</h3>
           <p>Клиент: {fio}</p>
           <p>Контактные данные клиента: {paw}</p>
           <p>Дата начало бронирования: {date}</p>
-          <button className={css.btnDate} onClick={getDate}>Рассчитать цену</button>
+          <button className={css.btnDate} onClick={getDate}>
+            Рассчитать цену
+          </button>
           <p>Сумма составляет: {sum}</p>
           <p>Учёт комиссии: {commission}</p>
           <p></p>
         </div>
       </div>
-    )
+    );
   }
 
   return (
@@ -116,7 +122,9 @@ function Dashboard() {
       <div className={css.createCard}>
         <div className={css.admin}>
           <h1>Админ панель</h1>
-          <button className={css.btnRequest} onClick={requestClick}>+ Бронь клиентов</button>
+          <button className={css.btnRequest} onClick={requestClick}>
+            + Бронь клиентов
+          </button>
           <button className={css.btnCreate} onClick={createCard}>
             + Создать карточку объявления
           </button>
